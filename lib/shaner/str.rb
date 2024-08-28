@@ -1,11 +1,9 @@
+require "active_support/inflector"
+
 module Shaner
   class Str
-    def initialize
+    def self.title(str)
+      str.titleize
     end
-
-    def self.to_up(str)
-      str
-    end
-
   end
 end
